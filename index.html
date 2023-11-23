@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <Title>Movie Deck</Title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="/">
+            <h1>Movie Deck</h1>
+        </a>
+    </header>
+
+    <!-- search box -->
+    <div class="search_bar">
+        <input type="search" name="search" id="search_input" placeholder="Search by name...">
+        <button id="search_button">Search</button>
+    </div>
+
+    <!-- sort buttons -->
+    <div class="sort_buttons">
+        <button id="sort-by-date">Sort by date (oldest to latest)</button>
+        <button id="sort-by-rating">Sort by rating (least to most)</button>
+    </div>
+
+    <!-- listing tabs -->
+    <div class="listing_tabs">
+        <button id="all-tabs" class="active-tab">All</button>
+        <button id="favorite-tabs">Favorite</button>
+    </div>
+
+    <!-- listing -->
+    <div id="movies-list-pagination-button">
+        <ul id="movies-list">
+            <!-- <li class="card">
+                <img src="https://image.tmdb.org/t/p/original/3bhkrj58Vtu7enYsRolD1fZdja1.jpg" alt="movie-title"
+                    class="poster">
+                <p class="title">Movie Title</p>
+                <section class="vote-favoriteIcon">
+                    <section class="vote">
+                        <p class="vote-count">Votes - 100</p>
+                        <p class="vote-rating">Rating - 4.5</p>
+                    </section>
+                    <i class="fa-regular fa-heart"></i>
+                </section>
+            </li> -->
+        </ul>
+        <div class="pagination">
+            <button id="prev-btn">Previous</button>
+            <button id="curr-btn">Current Page : 1</button>
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Movie Deck</p>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/e7bb83bece.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
